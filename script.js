@@ -77,15 +77,23 @@ let appData = {
         appData.income = items.split(', ');
         appData.income.push(prompt('Может что-то еще?', ''));
         appData.income.sort();
+        for (let i = 0; i < this.income.length; i++) {
             if (
-                typeof income === 'string' &&
-                typeof income !== null &&
-                typeof income !== ''
+                typeof this.income[i] === 'string' &&
+                typeof this.income[i] !== null &&
+                typeof this.income[i] !== ''
             ) {
                 console.log('d-Done');
-            };
-        items.forEach(() => {
-            console.log(items);
+            } else {
+                console.log('errrroor');
+            }
+        }
+        let addIncome = 'Спообы доп. заработка: ';
+        this.income.forEach(element => {
+            addIncome += ` ${element},`;
         });
+        console.log(addIncome.replace(/\,$/, ''));
     }
 };
+
+

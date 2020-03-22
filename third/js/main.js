@@ -1,0 +1,22 @@
+const startCalcButton = document.getElementById('start'),
+    budgetValue = document.getElementsByClassName('budget-value'),
+    daybudgetValue = document.getElementsByClassName('daybudget-value'),
+    levelValue = document.getElementsByClassName('level-value'),
+    expensesValue = document.getElementsByClassName('expenses-value'),
+    optionalexpensesValue = document.getElementsByClassName(
+        'optionalexpenses-value'
+    ),
+    incomeValue = document.getElementsByClassName('income-value'),
+    monthsavingsValue = document.getElementsByClassName('monthsavings-value'),
+    yearsavingsValue = document.getElementsByClassName('daybudget-value'),
+    buttons = document.getElementsByTagName('button'),
+    optionalexpensesBtn = buttons[1],
+    countBudgetBtn = buttons[2],
+    expensesItems = document.querySelectorAll('.expenses-item'),
+    chooseIncomeLabel = document.querySelector('.choose-income-label'),
+    checksavingsCeckbox = document.querySelector('#savings'),
+    sum = document.querySelector('.choose-sum'),
+    percent = document.querySelector('.percent'),
+    year = document.querySelector('.year-value'),
+    month = document.querySelector('.month-value'),
+    day = document.querySelector('.day-value');

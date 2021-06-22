@@ -95,7 +95,7 @@ countBtn.addEventListener("click", function () {
 			levelValue.textContent = "Произошла ошибка";
 		}
 	} else {
-		dayBudgetValue.textContent = "Поизошла ошибка";
+		dayBudgetValue.textContent = "Произошла ошибка";
 	}
 });
 
